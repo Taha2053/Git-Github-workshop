@@ -1,5 +1,5 @@
 # make a project directory and call it my-repo
-# open the project in vscode the poershell in windows (cmd -> code .)
+# open the project in vscode (cmd -> code .)
 # make a file inside the folder "main.py" 
 print("hello Git")
 # run the file and see that it is executing 
@@ -13,31 +13,31 @@ ls -la
 
 # to check the status 
 git status
-# Red = Git sees the file but isn't tracking it yet. We need to tell Git to care about this file.
+#Red = Git sees the file but isn't tracking it yet. We need to tell Git to care about this file.
 
-# Stage the File 
+#Stage the File 
 git add main.py
 git add .
 git status
 
-# Commiting the file
+#Commiting the file
 git commit -m "Add hello Git script"
-# That a1b2c3d is a unique ID for this snapshot.
+#That a1b2c3d is a unique ID for this snapshot.
 
-# to see the history
+#to see the history
 git log
 
-# edit the file,make a change in the file
+#edit the file,make a change in the file
 print('hello world')
 
-# see the changes
+#see the changes
 git diff
-# Green = added lines. Red = removed lines. This shows EXACTLY what changed before you commit
+#Green = added lines. Red = removed lines. This shows EXACTLY what changed before you commit
 
-# stage and commit
+#stage and commit
 git add main.py
 git commit -m "Add hello world script"
 
 # see the history
 git log --oneline --graph
-git log -- graph --all #graph of history
+git log --graph --all #graph of history
